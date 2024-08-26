@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -42,7 +43,7 @@ public class EnemyAI : MonoBehaviour
             ChaseTarget();
         }
 
-        if(distanceToTarget <= chaseRange) 
+        if(distanceToTarget <= navMeshAgent.stoppingDistance) 
         {
             AttackTarget();
         }
@@ -73,4 +74,5 @@ public class EnemyAI : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
+
 }

@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(playerHealth - damage <= 0)
         {
-            Debug.Log("u died nigga");
+            GetComponent<DeathHandler>().HandleDeath();
         }
 
         playerHealth -= damage;
