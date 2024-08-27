@@ -9,19 +9,13 @@ using UnityEngine.Rendering;
 public class WeaponZoom : MonoBehaviour
 {
     [SerializeField] CinemachineVirtualCamera FPSCamera;
+    [SerializeField] FirstPersonController fpsControler;
     [SerializeField] float fov = 70f;
     [SerializeField] float zoom = 30f;
     [SerializeField] float sens = 2.5f;
     [SerializeField] float sensScope = .5f;
 
-    FirstPersonController fpsControler;
-
     bool zoomedInToggle = false;
-
-    private void Start()
-    {
-        fpsControler = GetComponent<FirstPersonController>();
-    }
 
     private void Update()
     {

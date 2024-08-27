@@ -834,6 +834,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 635945827}
   hitEffect: {fileID: 8643563246923226191, guid: 55fb3b326f9e7d246a89ab66578ece18, type: 3}
   ammoSlot: {fileID: 2030173812}
+  timeBetweenShots: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1012,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3750642844494028756, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
   m_PrefabInstance: {fileID: 784258330}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &804687006 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8135765246892438526, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 1468415628}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &884042593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,6 +1917,7 @@ PrefabInstance:
       objectReference: {fileID: 635945827}
     m_RemovedComponents:
     - {fileID: 9001047487869516409, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+    - {fileID: 8943211094288467432, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3482604828719419402, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
@@ -1920,6 +1933,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8029481192764553464, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1587579740}
+    - targetCorrespondingSourceObject: {fileID: 8029481192764553464, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1587579742}
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
 --- !u!1 &1488271127
 GameObject:
@@ -2122,11 +2138,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 399026563}
-  Range: 100
-  Damage: 30
+  Range: 150
+  Damage: 50
   muzzleFlash: {fileID: 635945827}
   hitEffect: {fileID: 8643563246923226191, guid: 55fb3b326f9e7d246a89ab66578ece18, type: 3}
   ammoSlot: {fileID: 2030173812}
+  timeBetweenShots: 2
+--- !u!114 &1587579742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587579736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b8b71364f99004c91081019057dd35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPSCamera: {fileID: 804687006}
+  fpsControler: {fileID: 2030173817}
+  fov: 70
+  zoom: 30
+  sens: 2.5
+  sensScope: 0.5
 --- !u!4 &1671283470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3750642844494028756, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
@@ -2561,6 +2596,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c34cbfc202411b49b8d192b4db3b528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2030173817 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 1468415628}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566424888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2050942616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2777,11 +2823,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2929549359382609822, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
       propertyPath: Range
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2929549359382609822, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
       propertyPath: Damage
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2929549359382609822, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
       propertyPath: FPCamera
@@ -2795,6 +2841,10 @@ PrefabInstance:
       propertyPath: muzzleFlash
       value: 
       objectReference: {fileID: 635945827}
+    - target: {fileID: 2929549359382609822, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8323291259828035451, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.334
