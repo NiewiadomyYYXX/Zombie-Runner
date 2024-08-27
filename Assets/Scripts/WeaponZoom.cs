@@ -11,26 +11,38 @@ public class WeaponZoom : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera FPSCamera;
     [SerializeField] float fov = 70f;
     [SerializeField] float zoom = 30f;
-    [SerializeField] float sens = .5f;
-    [SerializeField] float sensScope = 2.5f;
+    [SerializeField] float sens = 2.5f;
+    [SerializeField] float sensScope = .5f;
+
+    FirstPersonController fpsControler;
 
     bool zoomedInToggle = false;
 
+    private void Start()
+    {
+        fpsControler = GetComponent<FirstPersonController>();
+    }
+
     private void Update()
     {
-        if (Input.GetMouseButton(1))
+        ZoomWeapon();
+    }
+
+    private void ZoomWeapon()
+    {
+        if (Input.GetMouseButtonDown(1))
         {
-            if(zoomedInToggle == false)
+            if (zoomedInToggle == false)
             {
                 zoomedInToggle = true;
                 FPSCamera.m_Lens.FieldOfView = zoom;
-                GetComponent<FirstPersonController>().RotationSpeed = sensScope;
-            } 
+                fpsControler.RotationSpeed = sensScope;
+            }
             else
             {
                 zoomedInToggle = false;
                 FPSCamera.m_Lens.FieldOfView = fov;
-                GetComponent<FirstPersonController>().RotationSpeed = sens;
+                fpsControler.RotationSpeed = sens;
             }
         }
     }
