@@ -1777,6 +1777,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9001047487869516409, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 2030173812}
+    - target: {fileID: 9001047487869516409, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: hitEffect
       value: 
       objectReference: {fileID: 8643563246923226191, guid: 55fb3b326f9e7d246a89ab66578ece18, type: 3}
@@ -2398,6 +2402,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 1488271131}
+--- !u!114 &2030173812 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1236568941793249653, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 1468415628}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566424888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c34cbfc202411b49b8d192b4db3b528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2050942616
 GameObject:
   m_ObjectHideFlags: 0

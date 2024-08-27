@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 8616685848737228376}
   - component: {fileID: 5635219229299308310}
   - component: {fileID: 8943211094288467432}
+  - component: {fileID: 1236568941793249653}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -448,6 +449,21 @@ MonoBehaviour:
   FPSCamera: {fileID: 8135765246892438526}
   fov: 70
   zoom: 30
+  sens: 2.5
+  sensScope: 0.5
+--- !u!114 &1236568941793249653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c34cbfc202411b49b8d192b4db3b528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 15
 --- !u!1001 &680588720557188741
 PrefabInstance:
   m_ObjectHideFlags: 0
