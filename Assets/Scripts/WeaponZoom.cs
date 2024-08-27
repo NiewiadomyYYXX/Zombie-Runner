@@ -1,4 +1,5 @@
 using Cinemachine;
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -10,6 +11,8 @@ public class WeaponZoom : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera FPSCamera;
     [SerializeField] float fov = 70f;
     [SerializeField] float zoom = 30f;
+    [SerializeField] float sens = .5f;
+    [SerializeField] float sensScope = 2.5f;
 
     bool zoomedInToggle = false;
 
@@ -21,11 +24,13 @@ public class WeaponZoom : MonoBehaviour
             {
                 zoomedInToggle = true;
                 FPSCamera.m_Lens.FieldOfView = zoom;
+                GetComponent<FirstPersonController>().RotationSpeed = sensScope;
             } 
             else
             {
                 zoomedInToggle = false;
                 FPSCamera.m_Lens.FieldOfView = fov;
+                GetComponent<FirstPersonController>().RotationSpeed = sens;
             }
         }
     }
