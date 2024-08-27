@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: e930d9444098b794888f8632d9d73d68, type: 2}
+--- !u!198 &80628725 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7331433875806264611, guid: 7278a503761367744a0e120b86b018e3, type: 3}
+  m_PrefabInstance: {fileID: 621288996}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &130533405
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7854729726647576784, guid: 7278a503761367744a0e120b86b018e3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -831,7 +836,7 @@ MonoBehaviour:
   FPCamera: {fileID: 399026563}
   Range: 50
   Damage: 15
-  muzzleFlash: {fileID: 635945827}
+  muzzleFlash: {fileID: 80628725}
   hitEffect: {fileID: 8643563246923226191, guid: 55fb3b326f9e7d246a89ab66578ece18, type: 3}
   ammoSlot: {fileID: 2030173812}
   timeBetweenShots: 1
@@ -1023,6 +1028,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &842879106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6104794676520953932, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 1468415628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &842879107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842879106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71246d5fa8dbada4d86d997763b36c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1 &884042593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1435,11 @@ Transform:
   - {fileID: 473955779}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1249526137 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7415355562783465569, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
+  m_PrefabInstance: {fileID: 2851348837545058009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1260654352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1930,6 +1958,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2030173804}
+    - targetCorrespondingSourceObject: {fileID: 6104794676520953932, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 842879107}
     - targetCorrespondingSourceObject: {fileID: 8029481192764553464, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1587579740}
@@ -2840,7 +2871,7 @@ PrefabInstance:
     - target: {fileID: 2929549359382609822, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
       propertyPath: muzzleFlash
       value: 
-      objectReference: {fileID: 635945827}
+      objectReference: {fileID: 1249526137}
     - target: {fileID: 2929549359382609822, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
       propertyPath: timeBetweenShots
       value: 0.5
@@ -2891,7 +2922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8703652551735215553, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
