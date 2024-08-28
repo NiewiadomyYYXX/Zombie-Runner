@@ -414,7 +414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -497,7 +497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -871,7 +871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1078,7 +1078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1319,7 +1319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1405,7 +1405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8885323860994978760, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: hitPoints
@@ -1583,7 +1583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8885323860994978760, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: hitPoints
@@ -1774,7 +1774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2270,7 +2270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2587,7 +2587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2669,7 +2669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8885323860994978760, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: hitPoints
@@ -3026,7 +3026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8075378338753108097, guid: 3c23a9e391405cc4f99bfe08c02106c1, type: 3}
       propertyPath: m_StoppingDistance
-      value: 3.5
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
