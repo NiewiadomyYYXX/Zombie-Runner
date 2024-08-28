@@ -40,4 +40,12 @@ public class WeaponZoom : MonoBehaviour
             }
         }
     }
+
+    public void UnZoomWeapon()
+    {
+        zoomedInToggle = false;
+        FPSCamera.m_Lens.FieldOfView = fov;
+        fpsControler.RotationSpeed = sens;
+    }
+
 }

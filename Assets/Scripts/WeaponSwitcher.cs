@@ -8,8 +8,11 @@ public class WeaponSwitcher : MonoBehaviour
 {
     [SerializeField] int currentWeapon = 0;
 
+    WeaponZoom zoom;
+
     private void Start()
     {
+        zoom = FindObjectOfType<WeaponZoom>(); 
         SetWeaponActive();
     }
 
@@ -31,6 +34,7 @@ public class WeaponSwitcher : MonoBehaviour
     {
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
+            zoom.UnZoomWeapon();
             if(currentWeapon >= transform.childCount - 1)
             {
                 currentWeapon = 0;
@@ -42,6 +46,7 @@ public class WeaponSwitcher : MonoBehaviour
         }
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
+            zoom.UnZoomWeapon();
             if (currentWeapon <= 0)
             {
                 currentWeapon = transform.childCount - 1;
