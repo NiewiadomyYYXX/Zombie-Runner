@@ -839,6 +839,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 80628725}
   hitEffect: {fileID: 8643563246923226191, guid: 55fb3b326f9e7d246a89ab66578ece18, type: 3}
   ammoSlot: {fileID: 2030173812}
+  ammoType: 0
   timeBetweenShots: 1
 --- !u!1 &705507993
 GameObject:
@@ -2198,6 +2199,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 635945827}
   hitEffect: {fileID: 8643563246923226191, guid: 55fb3b326f9e7d246a89ab66578ece18, type: 3}
   ammoSlot: {fileID: 2030173812}
+  ammoType: 2
   timeBetweenShots: 2
 --- !u!114 &1587579742
 MonoBehaviour:
@@ -2892,6 +2894,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 2030173812}
+    - target: {fileID: 2929549359382609822, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2929549359382609822, guid: a40f7a6d24af7224eaabae178dba90da, type: 3}
       propertyPath: muzzleFlash
       value: 
