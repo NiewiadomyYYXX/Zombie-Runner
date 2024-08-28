@@ -27,7 +27,6 @@ public class WeaponSwitcher : MonoBehaviour
         {
             SetWeaponActive();
         }
-
     }
 
     private void ProcessScrollWheel()
